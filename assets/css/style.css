@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+input, label {
+    width: 45%;
+    font-size: 1rem;
+    text-align: right;
+    margin-bottom: 2%;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input[type=button] {
+    text-align: center;
+    background: rgb(255, 147, 47);
+}
+
+input[type=radio] {
+    width: unset;
+}
+
+select {
+    width: 45%;
+}
+
+div {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgb(245, 189, 35);
+    padding: 3%;
+    text-align: center;
+    font-size: 1.2rem;
+}
