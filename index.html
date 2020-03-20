@@ -21,25 +21,26 @@
             <input type="number" name="input" id="gewicht" placeholder="kg"><br>
 
             <label for="">Geschlecht</label><br>
-            <input type="radio" name="radio" value="weiblich"><label for="">Weiblich</label>
+            <input type="radio" name="radio" value="weiblich"><label for="">Weiblich</label><br>
             <input type="radio" name="radio" value="männlich"><label for="">Männlich</label><br>
 
             <label for="">Arbeits- und Freizeitaktivität</label><br>
             <select id="freizeit" onchange="getFreizeit()">
-                <option id="1" value="0">Schlafen</option>
-                <option id="2" value="1">Nur sitzen oder liegen</option>
-                <option id="3" value="2">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität
+                <option id="1" value="0.95">Schlafen</option>
+                <option id="2" value="1.2">Nur sitzen oder liegen</option>
+                <option id="3" value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
+                    Aktivität
                     in
                     der
                     Freizeit, z.B. Büroarbeit</option>
-                <option id="4" value="3">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                <option id="4" value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
                     Studierende,
                     Fließbandarbeiter, Laboranten, Kraftfahrer</option>
-                <option id="5" value="4">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                <option id="5" value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
                     Handwerker,
                     Mechaniker,
                     Hausfrauen</option>
-                <option id="6" value="5">Körperlich anstrengende berufliche Arbeit</option>
+                <option id="6" value="2.2">Körperlich anstrengende berufliche Arbeit</option>
             </select><br>
 
             <input type="button" value="Submit" onclick="rechnen()">
