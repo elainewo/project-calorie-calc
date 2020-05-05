@@ -14,18 +14,18 @@
         <form action="">
             <h1>Kalorien-Rechner</h1>
             <label for="">Körpergröße in cm</label><br>
-            <input type="number" name="input" id="grosse" placeholder="180"><br>
+            <input type="number" name="input" id="größe" placeholder="180"><br>
             <label for="">Alter</label><br>
             <input type="number" name="input" id="alter" placeholder="36"><br>
             <label for="">Gewicht</label><br>
             <input type="number" name="input" id="gewicht" placeholder="kg"><br>
 
             <label for="">Geschlecht</label><br>
-            <input type="radio" name="radio" value="weiblich"><label for="">Weiblich</label><br>
-            <input type="radio" name="radio" value="männlich"><label for="">Männlich</label><br>
+            <input type="radio" name="radio" id="weiblich" value="weiblich"><label for="">Weiblich</label>
+            <input type="radio" name="radio" id="männlich" value="männlich"><label for="">Männlich</label><br>
 
             <label for="">Arbeits- und Freizeitaktivität</label><br>
-            <select id="freizeit" onchange="getFreizeit()">
+            <select id="aktivität">
                 <option id="1" value="0.95">Schlafen</option>
                 <option id="2" value="1.2">Nur sitzen oder liegen</option>
                 <option id="3" value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
@@ -43,15 +43,26 @@
                 <option id="6" value="2.2">Körperlich anstrengende berufliche Arbeit</option>
             </select><br>
 
-            <input type="button" value="Submit" onclick="rechnen()">
+            <input type="button" id="button" value="Submit" onclick="rechnen()">
         </form>
-        <p>Grundumsatz</p>
-        <p id="kcal">kcal</p>
-        <!-- <p id="kJ">kJ</p> -->
 
-        <p>Gesamtumsatz</p>
-        <p id="kcal2">kcal</p>
-        <!-- <p id="kJ2">kJ</p> -->
+        <table>
+            <tr>
+                <th></th>
+                <th>kcal</th>
+                <th>kJ</th>
+            </tr>
+            <tr>
+                <td>Grundumsatz</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gesamtumsatz</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
     </div>
     <script src="assets/js/main.js"></script>
 </body>
